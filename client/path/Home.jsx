@@ -11,7 +11,11 @@ export default function Home() {
     <div className='main-div'>
       <h1>Home</h1>
       {/* <button onClick={() => {navigate('AboutMe')}}>About Me</button> */}
-      <Link to='AboutMe'>About Me</Link>
+      <Link to='Work'>My Work</Link>
+      <br />
+      <Link to='About'>About Me</Link>
+      <br />
+      <Link to='Contact'>Contact Me</Link>
     </div>
   )
 }
