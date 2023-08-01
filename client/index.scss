@@ -1,0 +1,64 @@
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
+body {
+  background-color: black;
+  // background-image: url('https://i.pinimg.com/originals/fd/b2/1c/fdb21c0e4f3dbb6ccd9a63c68fce8645.gif');
+  background-image: url('https://i.ytimg.com/vi/NtOwzU5Rpp8/maxresdefault.jpg');
+  // background-size: 100%;
+  // background-repeat: no-repeat;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.outer-circle {
+  width: 50vw;
+  height: 50vw;
+  // background-image: radial-gradient(farthest-side at 60% 55%, rgb(12, 34, 54), rgb(99, 234, 4));
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  animation: spin 10s linear infinite;
+}
+
+.inner-circle {
+  width: 35vw;
+  height: 35vw;
+  background-color: rgb(27, 178, 128);
+  position: absolute;
+  z-index: 1;
+}
+
+.link-circle {
+  width: 10vw;
+  height: 10vw;
+  background-image: radial-gradient(farthest-side at 60% 55%, rgb(233, 162, 174), rgb(234, 4, 177));
+  position: relative;
+  animation: spin 10s linear infinite reverse;
+  text-align: center;
+  box-shadow: 0 0 5px black;
+}
+
+.unique {
+  margin-top: auto;
+  position: relative;
+  top: 7vw;
+}
+
