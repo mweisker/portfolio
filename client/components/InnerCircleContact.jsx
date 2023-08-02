@@ -9,6 +9,7 @@ export default function innerCircleContact() {
   return (
     <div className='inner-circle-component center circle contact'>
       <h1>ContactMe</h1>
+      <Link to='Contact'>Contact Me</Link>
     </div>
   )
 }

@@ -9,6 +9,7 @@ export default function innerCircleWork() {
   return (
     <div className='inner-circle-component center circle work'>
       <h1>Work</h1>
+      <Link to='Work'>My Work</Link>
     </div>
   )
 }

@@ -10,7 +10,6 @@ import Work from './path/Work.jsx';
 const App = () => {
   return (
     <div>
-      <h1>Matthew's Portfolio</h1>
       {/* <Router> */}
         <Routes>
           <Route path='/' element={ <Home /> } />
