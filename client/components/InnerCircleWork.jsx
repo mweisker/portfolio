@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 export default function innerCircleWork() {
 
   return (
-    <div className='inner-circle-component default'>
+    <div className='inner-circle-component center circle work'>
       <h1>Work</h1>
     </div>
   )

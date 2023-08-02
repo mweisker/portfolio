@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 export default function innerCircleAbout() {
 
   return (
-    <div className='inner-circle-component about'>
+    <div className='inner-circle-component center circle about'>
       <h1>About Me</h1>
     </div>
   )

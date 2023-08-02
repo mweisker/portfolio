@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 export default function innerCircleContact() {
 
   return (
-    <div className='inner-circle-component contact'>
+    <div className='inner-circle-component center circle contact'>
       <h1>ContactMe</h1>
     </div>
   )

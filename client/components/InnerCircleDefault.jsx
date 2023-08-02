@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 export default function innerCircleDefault() {
 
   return (
-    <div className='inner-circle-component default'>
+    <div className='inner-circle-component center circle default'>
       <h1>Default</h1>
     </div>
   )
