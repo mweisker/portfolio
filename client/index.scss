@@ -49,16 +49,38 @@ body {
 .link-circle {
   width: 10vw;
   height: 10vw;
-  background-image: radial-gradient(farthest-side at 60% 55%, rgb(233, 162, 174), rgb(234, 4, 177));
+  // background-image: radial-gradient(farthest-side at 60% 55%, rgb(233, 162, 174), rgb(234, 4, 177));
   position: relative;
   animation: spin 10s linear infinite reverse;
   text-align: center;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 15px white;
+  position: relative;
+  background-size: 7vw;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.unique {
+.about-circle {
+  background-color: rgb(67, 113, 221);
+  background-image: url('https://cdn3.iconfinder.com/data/icons/free-set1/30/Name-Tag-512.png');
+}
+
+.work-circle {
+  background-color: tomato;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/5522/5522561.png');
   margin-top: auto;
-  position: relative;
   top: 7vw;
 }
 
+.contact-circle {
+  background-color: violet;
+  background-image: url('https://static.thenounproject.com/png/4590668-200.png');
+}
+
+.inner-circle-component {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
