@@ -8,7 +8,6 @@ export default function innerCircleDefault() {
 
   return (
     <div className='inner-circle-component center circle default'>
-      <h1>Default</h1>
     </div>
   )
 }

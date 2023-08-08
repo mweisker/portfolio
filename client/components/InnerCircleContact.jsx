@@ -8,8 +8,11 @@ export default function innerCircleContact() {
 
   return (
     <div className='inner-circle-component center circle contact'>
-      <h1>ContactMe</h1>
-      <Link to='Contact'>Contact Me</Link>
+      <Link to='Contact'>
+        <h1>Contact me</h1>
+        <h3>If you'd like to reach out to me with any questions, or if you just want to chat</h3>
+        <h3>Click here</h3>
+      </Link>
     </div>
   )
 }

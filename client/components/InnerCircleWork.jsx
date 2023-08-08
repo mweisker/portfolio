@@ -8,8 +8,11 @@ export default function innerCircleWork() {
 
   return (
     <div className='inner-circle-component center circle work'>
-      <h1>Work</h1>
-      <Link to='Work'>My Work</Link>
+      <Link to='Work'>
+        <h1>Work</h1>
+        <h3>To look at my work history and my past projects</h3>
+        <h3>Click here</h3>
+      </Link>
     </div>
   )
 }

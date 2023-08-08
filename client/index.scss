@@ -40,7 +40,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  animation: spin 10s linear infinite;
+  animation: spin 20s linear infinite;
 }
 
 .link-circle {
@@ -48,7 +48,7 @@ body {
   height: 7vw;
   // background-image: radial-gradient(farthest-side at 60% 55%, rgb(233, 162, 174), rgb(234, 4, 177));
   position: relative;
-  animation: spin 10s linear infinite reverse;
+  animation: spin 20s linear infinite reverse;
   text-align: center;
   box-shadow: 0 0 15px white;
   position: relative;
@@ -73,24 +73,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 90%;
+
+  }
 }
 
 .default {
-  background-color: red;
+  background: radial-gradient(rgba(255, 255, 255, 0.828), #94bce9);
 }
 
 .about {
-  background: radial-gradient(#eeaeca, #94bbe9);
+  background: radial-gradient(#b9ffc8, #94bbe9);
   animation: fadeIn .5s;
 }
 
 .work {
-  background-color: blue;
+  background: radial-gradient(#eeaeca, #94bbe9);
   animation: fadeIn .5s;
 }
 
 .contact {
-  background-color: pink;
+  background: radial-gradient(#fff5d3, #94bbe9);
   animation: fadeIn .5s;
 }
 
@@ -99,57 +111,20 @@ body {
   opacity: 0.5;
 }
 
-// .about-circle {
-//   // background-color: radial-gradient(#eeaeca, #94bbe9);
-//   background: url('https://cdn3.iconfinder.com/data/icons/free-set1/30/Name-Tag-512.png') center no-repeat, radial-gradient(#eeaeca, #94bbe9);
-//   background-size: 5vw;
-// }
-
 .about-circle {
-  background-image: url('https://cdn3.iconfinder.com/data/icons/free-set1/30/Name-Tag-512.png'), radial-gradient(#eeaeca, #94bbe9);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 5vw, cover; /* Specify the size for both the image and the gradient */
-  background-blend-mode: normal, normal; /* Adjust blend mode as needed */
+  background-color: #b9ffc8;
+  background-image: url('https://cdn3.iconfinder.com/data/icons/free-set1/30/Name-Tag-512.png');
+  // background-size: 5vw;
 }
 
-
-// .about-circle {
-//   background-image: radial-gradient(#eeaeca, #94bbe9),
-//     url('https://cdn3.iconfinder.com/data/icons/free-set1/30/Name-Tag-512.png');
-// }
-
-// .about-circle {
-//   position: relative;
-//   background-image: radial-gradient(#eeaeca, #94bbe9),
-//     url('https://cdn3.iconfinder.com/data/icons/free-set1/30/Name-Tag-512.png');
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
-
-// .about-circle::before {
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   border-radius: 50%;
-//   background-image: radial-gradient(#eeaeca, #94bbe9);
-//   z-index: -1;
-// }
-
-
-
 .work-circle {
-  background-color: tomato;
+  background-color: #eeaeca;
   background-image: url('https://cdn-icons-png.flaticon.com/512/5522/5522561.png');
   margin-top: auto;
   top: 7vw;
 }
 
 .contact-circle {
-  background-color: violet;
+  background-color: #fff5d3;
   background-image: url('https://static.thenounproject.com/png/4590668-200.png');
 }

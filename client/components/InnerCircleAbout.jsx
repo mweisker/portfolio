@@ -8,8 +8,11 @@ export default function innerCircleAbout() {
 
   return (
     <div className='inner-circle-component center circle about'>
-      <h1>About Me</h1>
-      <Link to='About'>About Me</Link>
+      <Link to='About'>
+        <h1>About Me</h1>
+        <h3>To learn about my coding history and what I'm doing when I'm not making kickass websites</h3>
+        <h3>Click here</h3>
+      </Link>
     </div>
   )
 }
