@@ -9,7 +9,9 @@ export default function innerCircleDefault() {
 
   return (
     <div className='inner-circle-component center circle default'>
-      <img src={profile} className='profile-photo' />
+      <div className='img-wrapper circle'>
+        <img src={profile} className='profile-photo circle' />
+      </div>
     </div>
   )
 }

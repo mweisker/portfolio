@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './About.scss';
+// import './About.scss';
 
 
 export default function About() {
 
   return (
-    <div className='background-about'>
+    <div className='background background-about'>
       <h1>About Me</h1>
       <Link to='/'>Home</Link>
     </div>
