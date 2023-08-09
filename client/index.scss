@@ -70,7 +70,7 @@ body {
 }
 
 .active {
-  transform: scale(1.5);
+  transform: scale(1.2);
   box-shadow: inset 0 0 15px black, 0 0 15px white;
   animation: none;
 }
@@ -114,7 +114,6 @@ body {
 .inner-circle {
   width: 25vw;
   height: 25vw;
-  box-shadow: inset 1px 3px 12px red;
 }
 
 .inner-circle-component {
@@ -206,7 +205,6 @@ body {
 .link-holder {
   width: 80%;
   height: 10vw;
-  border: 3px solid red;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -237,7 +235,36 @@ body {
   background-size: 7vw;
 }
 
-// .active {
-//   transform: scale(1.5);
-//   box-shadow: inset 0 0 15px black, 0 0 15px white;
-// }
+.component-holder {
+  width: 80%;
+  height: 20vw;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image-holder {
+  width: 35%;
+  height: 90%;
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-holder {
+  width: 50%;
+  height: 90%;
+  text-align: center;
+  border: 2px solid purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
