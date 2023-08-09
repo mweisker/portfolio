@@ -20,6 +20,11 @@ $gradient-blue: #94bbe9;
 body {
   background-color: black;
   background-image: url('https://i.ytimg.com/vi/NtOwzU5Rpp8/maxresdefault.jpg');
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.148);
 }
 
 .circle {
@@ -35,6 +40,10 @@ body {
   margin: auto;
 }
 
+.spin {
+  animation: spin 20s linear infinite reverse;
+}
+
 .outer-circle {
   width: 40vw;
   height: 40vw;
@@ -45,9 +54,13 @@ body {
 }
 
 .link-circle {
-  width: 7vw;
-  height: 7vw;
-  animation: spin 20s linear infinite reverse;
+  --original-width: 7vw;
+  --original-height: 7vw;
+  width: var(--original-width);
+  height: var(--original-height);
+  transition: transform 0.3s ease;
+  // width: 7vw;
+  // height: 7vw;
   text-align: center;
   box-shadow: inset 3px 2px 15px black;
   position: relative;
@@ -55,6 +68,19 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.active {
+  transform: scale(1.5);
+  box-shadow: inset 0 0 15px black, 0 0 15px white;
+  animation: none;
+}
+
+// .active {
+//   width: 8vw;
+//   height: 8vw;
+//   box-shadow: inset 0 0 15px black, 0 0 15px white;
+//   background-size: 10vw;
+// }
 
 .default {
   background: radial-gradient(rgba(255, 255, 255, 0.828),  $gradient-blue);
@@ -176,3 +202,42 @@ body {
 .background-work {
   background: radial-gradient(closest-corner, #eeaeca 70%, #94bbe9, #94bce94a);
 }
+
+.link-holder {
+  width: 80%;
+  height: 10vw;
+  border: 3px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home {
+  background: white url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/1024px-Home-icon.svg.png') no-repeat center;
+  background-size: 4vw;
+}
+
+.codesmith {
+  background: white url('https://yt3.googleusercontent.com/ytc/AOPolaQGlKD0K6ORcowdit1kKEnCGpwhvC0j68z2iCs_NEw=s900-c-k-c0x00ffffff-no-rj') no-repeat center;
+  background-size: 5vw;
+}
+
+.obsidian {
+  background: black url('./images/Obsidian.jpeg') no-repeat center;
+  background-size: 5vw;
+}
+
+.flying-crow {
+  background: black url('https://c4.wallpaperflare.com/wallpaper/213/34/409/crow-bird-black-drawing-hd-wallpaper-preview.jpg') no-repeat center;
+  background-size: 10vw;
+}
+
+.procrastination {
+  background: url('https://culturedecanted.files.wordpress.com/2015/04/white-rabbit-closeup.jpg?w=640') no-repeat center;
+  background-size: 7vw;
+}
+
+// .active {
+//   transform: scale(1.5);
+//   box-shadow: inset 0 0 15px black, 0 0 15px white;
+// }
