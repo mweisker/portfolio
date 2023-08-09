@@ -91,6 +91,12 @@ body {
   background: radial-gradient(rgba(255, 255, 255, 0.828), #94bce9);
 }
 
+.profile-photo {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+}
+
 .about {
   background: radial-gradient(#b9ffc8, #94bbe9);
   animation: fadeIn .5s;
