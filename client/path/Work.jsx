@@ -38,8 +38,6 @@ export default function Work() {
       { center === 'flyingCrow' ? <FlyingCrow/> : null }
       { center === 'procrastination' ? <Procrastination/> : null }
 
-
-      <Link to='/'>Home</Link>
       <div className='link-holder home-link'>
         <div className={`link-circle circle home ${active['home'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('home')}}></div>
       </div>
