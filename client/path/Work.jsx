@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // import './Work.scss'
 import Codesmith from '../components/WorkComponents/codesmith.jsx';
 import FlyingCrow from '../components/WorkComponents/flyingCrow.jsx';
-import Home from '../components/WorkComponents/home.jsx';
+import Home from '../components/WorkComponents/homeWork.jsx';
 import Obsidian from '../components/WorkComponents/obsidian.jsx';
 import Procrastination from '../components/WorkComponents/procrastination.jsx';
 
