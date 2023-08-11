@@ -6,7 +6,6 @@ import Carousel from '../Carousel.jsx';
 // import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import NovaAdventure from '../../images/nova-adventure.jpg';
-import NovaPaddleboard from '../../images/nova-paddleboard.jpg';
 import NovaToy from '../../images/nova-toy.jpg';
 import NovaView from '../../images/nova-view.jpg';
 import NovaShadowChill from '../../images/nova+shadow-chill.jpg';

@@ -300,6 +300,7 @@ h3 {
 .text-holder {
   width: 50%;
   height: 90%;
+  line-height: 1.2;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -390,8 +391,9 @@ h3 {
 .carousel-img {
   max-width: 90%;
   height: 15vw;
-  padding: 0 20px 0 20px;
-  box-shadow: 0 15px 5px -15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  // border-radius: 20px;
+  border-radius: 10%;
 }
 
 /* final stage */
