@@ -207,15 +207,23 @@ h3 {
 }
 
 .background-about {
-  background: radial-gradient(closest-corner, $about-color 70%, #94bbe9, #94bce94a);
+  background: radial-gradient(closest-corner, $gradient-blue 70%, $about-color, #94bce94a);
 }
 
 .background-contact {
-  background: radial-gradient(closest-corner, #fff5d3 70%, #94bbe9, #94bce94a);
+  background: radial-gradient(closest-corner, $gradient-blue 70%, $contact-color, #94bce94a);
+
+  a {
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    font-style: oblique;
+    text-shadow: 0 0 1px black;
+  }
 }
 
 .background-work {
-  background: radial-gradient(closest-corner, #eeaeca 70%, #94bbe9, #94bce94a);
+  background: radial-gradient(closest-corner, $gradient-blue 70%, $work-color, #94bce94a);
 }
 
 .link-holder {
@@ -229,6 +237,10 @@ h3 {
 .home {
   background: white url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/1024px-Home-icon.svg.png') no-repeat center;
   background-size: 4vw;
+}
+
+.return-home {
+  margin-top: 1vw;
 }
 
 // Work Icons
@@ -273,6 +285,28 @@ h3 {
 .resume {
   background: white url('https://static.vecteezy.com/system/resources/previews/002/205/865/original/employee-resume-icon-free-vector.jpg') no-repeat center;
   background-size: 5vw;
+}
+
+// Contact img/icon
+
+.contact-profile {
+  width: 10vw;
+  box-shadow: 1px 2px 5px black;
+  margin: 2vw;
+}
+
+.contact-link-holder {
+
+  h2 {
+    display: flex;
+    margin-bottom: 1vw;
+  }
+
+  img {
+    width: 2vw;
+    height: 2vw;
+    margin-right: 1vw;
+  }
 }
 
 .component-holder {
@@ -326,22 +360,7 @@ h3 {
   }
 }
 
-.gallery-cell {
-  max-width: 100%;
-  max-height: 100%;
-  margin-right: 1.5vw;
-  background: $gradient-blue;
-  counter-increment: gallery-cell;
-}
 
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 100%;
-  font-size: 10vw;
-  color: white;
-}
 
 // Carousel
 
