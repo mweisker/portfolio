@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function resume() {
+export default function recommendations() {
 
   return (
     <div className='component-holder'>

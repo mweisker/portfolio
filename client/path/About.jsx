@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 // import './Work.scss'
 import Home from '../components/AboutComponents/homeAbout.jsx';
 import Travel from '../components/AboutComponents/travel.jsx';
-import Nova from '../components/AboutComponents/nova.jsx';
+import Nova from '../components/AboutComponents/dogs.jsx';
 import Books from '../components/AboutComponents/books.jsx';
-import Resume from '../components/AboutComponents/resume.jsx';
+import Resume from '../components/AboutComponents/recommendations.jsx';
 
 
 
