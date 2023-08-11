@@ -25,7 +25,7 @@ export default function Work() {
   }
 
   return (
-    <div className='background background-work'>
+    <div className='background background-about'>
       <div className='link-holder work-links'>
         <div className={`link-circle circle travel ${active['travel'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('travel')}}></div>
         <div className={`link-circle circle nova ${active['nova'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('nova')}}></div>
