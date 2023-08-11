@@ -6,7 +6,7 @@ import Home from '../components/AboutComponents/homeAbout.jsx';
 import Travel from '../components/AboutComponents/travel.jsx';
 import Nova from '../components/AboutComponents/dogs.jsx';
 import Books from '../components/AboutComponents/books.jsx';
-import Resume from '../components/AboutComponents/recommendations.jsx';
+import Recommendations from '../components/AboutComponents/recommendations.jsx';
 
 
 
@@ -30,14 +30,14 @@ export default function Work() {
         <div className={`link-circle circle travel ${active['travel'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('travel')}}></div>
         <div className={`link-circle circle nova ${active['nova'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('nova')}}></div>
         <div className={`link-circle circle books ${active['books'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('books')}}></div>
-        <div className={`link-circle circle resume ${active['resume'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('resume')}}></div>
+        <div className={`link-circle circle recommendations ${active['recommendations'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('recommendations')}}></div>
       </div>
 
       { center === 'home' ? <Home/> : null }
       { center === 'travel' ? <Travel/> : null }
       { center === 'nova' ? <Nova/> : null }
       { center === 'books' ? <Books/> : null }
-      { center === 'resume' ? <Resume/> : null }
+      { center === 'recommendations' ? <Recommendations/> : null }
 
       <div className='link-holder home-link'>
         <div className={`link-circle circle home ${active['home'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('home')}}></div>
