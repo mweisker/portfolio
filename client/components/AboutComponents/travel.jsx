@@ -39,7 +39,7 @@ export default function travel() {
         { activeIndex < 4 ? <h3>I have been lucky enough to live abroad several times in my life.  
           Most recently I lived in Korea from 2019-2022 teaching English.</h3> : null }
         { activeIndex >= 4 && activeIndex < 7 ? <h3>Before that I lived in Pohnpei, Micronesia from 2016-2018 as a Peace Corps Volunteer.</h3> : null }
-        { activeIndex >= 7 ? <h3>My passion for traveling started when I studied for a semester in Chile, and I got to visit the Atacama Desert and Machu Picchu.</h3> : null }
+        { activeIndex >= 7 ? <h3>My passion for traveling started when I studied for a semester in Chile, where I lived in Santiago and visited the Atacama Desert and Machu Picchu.</h3> : null }
       </div>
     </div>
   )

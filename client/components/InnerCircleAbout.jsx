@@ -10,7 +10,7 @@ export default function innerCircleAbout() {
     <div className='inner-circle-component center circle about'>
       <Link to='About'>
         <h1>About Me</h1>
-        <h3>To see what I'm doing when I'm not making kickass websites</h3>
+        <h3>To learn more about me and my interests</h3>
         <h3>Click here</h3>
       </Link>
     </div>

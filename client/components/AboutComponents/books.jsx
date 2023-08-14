@@ -9,7 +9,7 @@ export default function books() {
       </div>
       <div className='text-holder'>
         <h1>Books</h1>
-        <h3>I love reading whenever I have the time.  My favorite series at the moment is the Stormlight Archives by Brandon Sanderson, but I'm a huge fan of all worldbuilding fantasy with detailed magic system.</h3>
+        <h3>I love reading whenever I have the time.  My favorite series at the moment is the Stormlight Archives by Brandon Sanderson, but I'm a huge fan of all worldbuilding fantasy with detailed magic systems.</h3>
         <h3>If you have any book recomendations for me, please let me know.</h3>
       </div>
     </div>
