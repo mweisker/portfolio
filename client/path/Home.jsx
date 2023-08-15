@@ -27,9 +27,15 @@ export default function Home() {
     <div className='main-div'>
 
       <div className='outer-circle circle center'>
-        <div className={`link-circle about-circle circle spin ${active['about'] ? 'active' : ''}` } onMouseEnter={() => {handleMouseEnter('about')}}></div>
-        <div className={`link-circle work-circle circle spin ${active['work'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('work')}}></div>
-        <div className={`link-circle contact-circle circle spin ${active['contact'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('contact')}}></div>
+        <Link to='About'>
+          <div className={`link-circle about-circle circle spin ${active['about'] ? 'active' : ''}` } onMouseEnter={() => {handleMouseEnter('about')}}></div>
+        </Link>
+        <Link to='Work' className='work-link'>
+          <div className={`link-circle work-circle circle spin ${active['work'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('work')}}></div>
+        </Link>
+        <Link to='Contact'>
+          <div className={`link-circle contact-circle circle spin ${active['contact'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('contact')}}></div>
+        </Link>
 
       </div>
       <div className='inner-circle circle center background-circle'></div>
