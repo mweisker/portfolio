@@ -8,6 +8,36 @@
   }
 }
 
+@keyframes ellipse {
+  0% {
+    transform:rotate(0deg);
+    width: var(--original-width, 42vw);
+    height: var(--original-height, 20vw);
+    z-index: -5;
+  }
+  25% {
+    width: var(--original-width, 37vw);
+    height: var(--original-height, 40vw);
+    z-index: -5;
+  }
+  50% {
+    width: var(--original-width, 42vw);
+    height: var(--original-height, 20vw);
+    z-index: 5;
+  }
+  75% {
+    width: var(--original-width, 37vw);
+    height: var(--original-height, 20vw);
+    z-index: 5;
+  }
+  100% {
+    transform:rotate(360deg);
+    width: var(--original-width, 42vw);
+    height: var(--original-height, 20vw);
+  }
+}
+
+
 @keyframes fadeIn {
   0% { opacity: 0 }
   100% { opacity: 1 }
@@ -22,6 +52,7 @@ body {
   background-color: black;
   background-image: url('./images/portfolio-background.jpg');
   overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 h1 {
@@ -59,7 +90,11 @@ h3 {
 }
 
 ::-webkit-scrollbar {
-  background-color: rgba(0, 0, 0, 0.148);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .circle {
@@ -75,22 +110,155 @@ h3 {
   margin: auto;
 }
 
+// @keyframes slideAlongOval {
+//   0% {
+//     transform: rotate(0deg) translateX(100%) translateY(0%);
+//   }
+//   25% {
+//     transform: rotate(90deg) translateX(0%) translateY(-100%);
+//   }
+//   50% {
+//     transform: rotate(180deg) translateX(-100%) translateY(0%);
+//   }
+//   75% {
+//     transform: rotate(270deg) translateX(0%) translateY(100%);
+//   }
+//   100% {
+//     transform: rotate(360deg) translateX(100%) translateY(0%);
+//   }
+// }
+
+@keyframes slideAlongOvalAbout {
+  0% {
+    transform: translateX(0%) translateY(0%);
+    z-index: 0;
+  }
+
+  25% {
+    transform: translateX(50%) translateY(-50%);
+    z-index: -5;
+  }
+
+  50% {
+    transform: translateX(100%) translateY(0%);
+    z-index: 0;
+  }
+
+  75% {
+    transform: translateX(50%) translateY(50%);
+    z-index: 5;
+  }
+
+  100% {
+    transform: translateX(0%) translateY(0%);
+    z-index: 0;
+  }
+}
+
+@keyframes slideAlongOvalWork {
+  0% {
+    transform: translateX(0%) translateY(-10%);
+    z-index: 5;
+  }
+
+  25% {
+    transform: translateX(-50%) translateY(-60%);
+    z-index: 0;
+  }
+
+  50% {
+    transform: translateX(0%) translateY(-110%);
+    z-index: -5;
+  }
+
+  75% {
+    transform: translateX(50%) translateY(-60%);
+    z-index: 0;
+  }
+
+  100% {
+    transform: translateX(0%) translateY(-10%);
+    z-index: 5;
+
+  }
+}
+
+@keyframes slideAlongOvalContact {
+  0% {
+    transform: translateX(0%) translateY(0%);
+    z-index: 5;
+  }
+
+  25% {
+    transform: translateX(-50%) translateY(50%);
+    z-index: 5;
+  }
+
+  50% {
+    transform: translateX(-100%) translateY(0%);
+    z-index: -5;
+  }
+
+  75% {
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -5;
+  }
+
+  100% {
+    transform: translateX(0%) translateY(0%);
+    z-index: 0;
+
+  }
+}
+
 .spin {
-  animation: spin 20s linear infinite reverse;
+  // animation: spin 20s linear infinite reverse;
+  // animation: slideAlongOval 2s linear infinite;
+}
+
+.slide-oval {
+  // width: 40vw;
+  // height: 20vw;
+  // border: 3px solid yellow;
+  // animation: slideAlongOval 2s linear infinite;
 }
 
 .outer-circle {
-  width: 40vw;
-  height: 40vw;
+  --original-width: 50vw;
+  --original-height: 30vw;
+  width: var(--original-width);
+  height: var(--original-height);
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  animation: spin 20s linear infinite;
+  align-items: center;
+  // animation: ellipse 20s linear infinite;
+  // border: 2px solid red;
 
   @media (max-width: 768px) {
     width: 70vw;
     height: 70vw;
   }
+}
+
+.about-placement {
+  justify-content: start;
+  align-items: center;
+  z-index: 5;
+
+  animation: slideAlongOvalAbout 15s linear infinite;
+}
+
+.work-placement {
+  justify-content: center;
+  align-items: end;
+
+  animation: slideAlongOvalWork 15s linear infinite;
+}
+
+.contact-placement {
+  justify-content: end;
+  align-items: center;
+  animation: slideAlongOvalContact 15s linear infinite;
 }
 
 .link-circle {
@@ -236,12 +404,7 @@ h3 {
 .work-circle {
   background-color: $work-color;
   background-image: url('https://cdn-icons-png.flaticon.com/512/5522/5522561.png');
-  margin-top: auto;
   top: 7vw;
-}
-
-.work-link {
-  margin-top: auto;
 }
 
 .contact-circle {
