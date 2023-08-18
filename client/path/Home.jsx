@@ -26,12 +26,28 @@ export default function Home() {
   return (
     <div className='main-div'>
 
-      <div className='outer-circle circle center about-placement'>
+        <Link to='About'>
+          <div className='slide-oval'>
+            <div className={`ellipse-animation link-circle about-circle circle ${active['about'] ? 'active' : ''}` } onMouseEnter={() => {handleMouseEnter('about')}}></div>
+          </div>
+        </Link>
+        <Link to='Work'>
+          <div className='slide-oval'>
+            <div className={`ellipse-animation link-circle work-circle circle ${active['work'] ? 'active' : ''}` } onMouseEnter={() => {handleMouseEnter('work')}}></div>
+          </div>
+        </Link>        
+        <Link to='Contact'>
+          <div className='slide-oval'>
+            <div className={`ellipse-animation link-circle contact-circle circle ${active['contact'] ? 'active' : ''}` } onMouseEnter={() => {handleMouseEnter('contact')}}></div>
+          </div>
+        </Link>
+
+      {/* <div className='outer-circle circle center about-placement'>
         <Link to='About' className='slide-oval'>
           <div className={`link-circle about-circle circle spin ${active['about'] ? 'active' : ''}` } onMouseEnter={() => {handleMouseEnter('about')}}></div>
         </Link>
-      </div>
-      <div className='outer-circle circle center work-placement'>
+      </div> */}
+      {/* <div className='outer-circle circle center work-placement'>
         <Link to='Work'>
           <div className={`link-circle work-circle circle spin ${active['work'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('work')}}></div>
         </Link>
@@ -40,7 +56,7 @@ export default function Home() {
         <Link to='Contact'>
           <div className={`link-circle contact-circle circle spin ${active['contact'] ? 'active' : ''}`} onMouseEnter={() => {handleMouseEnter('contact')}}></div>
         </Link>
-      </div>
+      </div> */}
       <div className='inner-circle circle center background-circle'></div>
       <div className='inner-circle circle center'>
         { center === 'default' ? <Default/> : null }
